@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Baybayin typer</title>
+<meta charset="utf-8">
+
+    <script type="text/javascript">
+	  
+var conversion = {
+"a":"ᜀ",
+"e":"ᜁ",
+"i":"ᜁ",
+"o":"ᜂ",
+"u":"ᜂ",
+"A":"ᜀ",
+"E":"ᜁ",
+"I":"ᜁ",
+"O":"ᜂ",
+"U":"ᜂ",
+
+"k":"ᜃ᜔",
+"g":"ᜄ᜔",
+"ng":"ᜅ᜔",
+"t":"ᜆ᜔",
+"d":"ᜇ᜔",
+"r":"ᜇ᜔",
+"n":"ᜈ᜔",
+"p":"ᜉ᜔",
+"f":"ᜉ᜔",
+"b":"ᜊ᜔",
+"v":"ᜊ᜔",
+"m":"ᜋ᜔",
+"y":"ᜌ᜔",
+"l":"ᜎ᜔",
+"w":"ᜏ᜔",
+"s":"ᜐ᜔",
+"z":"ᜐ᜔",
+"h":"ᜑ᜔",
+"K":"ᜃ᜔",
+"G":"ᜄ᜔",
+"NG":"ᜅ᜔",
+"Ng":"ᜅ᜔",
+"T":"ᜆ᜔",
+"D":"ᜇ᜔",
+"R":"ᜇ᜔",
+"N":"ᜈ᜔",
+"P":"ᜉ᜔",
+"F":"ᜉ᜔",
+"B":"ᜊ᜔",
+"V":"ᜊ᜔",
+"M":"ᜋ᜔",
+"Y":"ᜌ᜔",
+"L":"ᜎ᜔",
+"W":"ᜏ᜔",
+"S":"ᜐ᜔",
+"Z":"ᜐ᜔",
+"H":"ᜑ᜔",
+
+"ka":"ᜃ",
+"ga":"ᜄ",
+"nga":"ᜅ",
+"ta":"ᜆ",
+"da":"ᜇ",
+"ra":"ᜇ",
+"na":"ᜈ",
+"pa":"ᜉ",
+"fa":"ᜉ",
+"ba":"ᜊ",
+"va":"ᜊ",
+"ma":"ᜋ",
+"ya":"ᜌ",
+"la":"ᜎ",
+"wa":"ᜏ",
+"sa":"ᜐ",
+"za":"ᜐ",
+"ha":"ᜑ",
+"Ka":"ᜃ",
+"Ga":"ᜄ",
+"Nga":"ᜅ",
+"Ta":"ᜆ",
+"Da":"ᜇ",
+"Ra":"ᜇ",
+"Na":"ᜈ",
+"Pa":"ᜉ",
+"Fa":"ᜉ",
+"Ba":"ᜊ",
+"Va":"ᜊ",
+"Ma":"ᜋ",
+"Ya":"ᜌ",
+"La":"ᜎ",
+"Wa":"ᜏ",
+"Sa":"ᜐ",
+"Za":"ᜐ",
+"Ha":"ᜑ",
+"KA":"ᜃ",
+"GA":"ᜄ",
+"NGA":"ᜅ",
+"TA":"ᜆ",
+"DA":"ᜇ",
+"RA":"ᜇ",
+"NA":"ᜈ",
+"PA":"ᜉ",
+"FA":"ᜉ",
+"BA":"ᜊ",
+"VA":"ᜊ",
+"MA":"ᜋ",
+"YA":"ᜌ",
+"LA":"ᜎ",
+"WA":"ᜏ",
+"SA":"ᜐ",
+"ZA":"ᜐ",
+"HA":"ᜑ",
+
+"ko":"ᜃᜓ",
+"go":"ᜄᜓ",
+"ngo":"ᜅᜓ",
+"to":"ᜆᜓ",
+"do":"ᜇᜓ",
+"ro":"ᜇᜓ",
+"no":"ᜈᜓ",
+"po":"ᜉᜓ",
+"fo":"ᜉᜓ",
+"bo":"ᜊᜓ",
+"vo":"ᜊᜓ",
+"mo":"ᜋᜓ",
+"yo":"ᜌᜓ",
+"lo":"ᜎᜓ",
+"wo":"ᜏᜓ",
+"so":"ᜐᜓ",
+"zo":"ᜐᜓ",
+"ho":"ᜑᜓ",
+"Ko":"ᜃᜓ",
+"Go":"ᜄᜓ",
+"Ngo":"ᜅᜓ",
+"To":"ᜆᜓ",
+"Do":"ᜇᜓ",
+"Ro":"ᜇᜓ",
+"No":"ᜈᜓ",
+"Po":"ᜉᜓ",
+"Fo":"ᜉᜓ",
+"Bo":"ᜊᜓ",
+"Vo":"ᜊᜓ",
+"Mo":"ᜋᜓ",
+"Yo":"ᜌᜓ",
+"Lo":"ᜎᜓ",
+"Wo":"ᜏᜓ",
+"So":"ᜐᜓ",
+"Zo":"ᜐᜓ",
+"Ho":"ᜑᜓ",
+"KO":"ᜃᜓ",
+"GO":"ᜄᜓ",
+"NGO":"ᜅᜓ",
+"TO":"ᜆᜓ",
+"DO":"ᜇᜓ",
+"RO":"ᜇᜓ",
+"NO":"ᜈᜓ",
+"PO":"ᜉᜓ",
+"FO":"ᜉᜓ",
+"BO":"ᜊᜓ",
+"VO":"ᜊᜓ",
+"MO":"ᜋᜓ",
+"YO":"ᜌᜓ",
+"LO":"ᜎᜓ",
+"WO":"ᜏᜓ",
+"SO":"ᜐᜓ",
+"ZO":"ᜐᜓ",
+"HO":"ᜑᜓ",
+"ku":"ᜃᜓ",
+"gu":"ᜄᜓ",
+"ngu":"ᜅᜓ",
+"tu":"ᜆᜓ",
+"du":"ᜇᜓ",
+"ru":"ᜇᜓ",
+"nu":"ᜈᜓ",
+"pu":"ᜉᜓ",
+"fu":"ᜉᜓ",
+"bu":"ᜊᜓ",
+"vu":"ᜊᜓ",
+"mu":"ᜋᜓ",
+"yu":"ᜌᜓ",
+"lu":"ᜎᜓ",
+"wu":"ᜏᜓ",
+"su":"ᜐᜓ",
+"zu":"ᜐᜓ",
+"hu":"ᜑᜓ",
+"Ku":"ᜃᜓ",
+"Gu":"ᜄᜓ",
+"Ngu":"ᜅᜓ",
+"Tu":"ᜆᜓ",
+"Du":"ᜇᜓ",
+"Ru":"ᜇᜓ",
+"Nu":"ᜈᜓ",
+"Pu":"ᜉᜓ",
+"Fu":"ᜉᜓ",
+"Bu":"ᜊᜓ",
+"Vu":"ᜊᜓ",
+"Mu":"ᜋᜓ",
+"Yu":"ᜌᜓ",
+"Lu":"ᜎᜓ",
+"Wu":"ᜏᜓ",
+"Su":"ᜐᜓ",
+"Zu":"ᜐᜓ",
+"Hu":"ᜑᜓ",
+"KU":"ᜃᜓ",
+"GU":"ᜄᜓ",
+"NGU":"ᜅᜓ",
+"TU":"ᜆᜓ",
+"DU":"ᜇᜓ",
+"RU":"ᜇᜓ",
+"NU":"ᜈᜓ",
+"PU":"ᜉᜓ",
+"FU":"ᜉᜓ",
+"BU":"ᜊᜓ",
+"VU":"ᜊᜓ",
+"MU":"ᜋᜓ",
+"YU":"ᜌᜓ",
+"LU":"ᜎᜓ",
+"WU":"ᜏᜓ",
+"SU":"ᜐᜓ",
+"ZU":"ᜐᜓ",
+"HU":"ᜑᜓ",
+
+
+
+"ke":"ᜃᜒ",
+"ge":"ᜄᜒ",
+"nge":"ᜅᜒ",
+"te":"ᜆᜒ",
+"de":"ᜇᜒ",
+"re":"ᜇᜒ",
+"ne":"ᜈᜒ",
+"pe":"ᜉᜒ",
+"fe":"ᜉᜒ",
+"be":"ᜊᜒ",
+"ve":"ᜊᜒ",
+"me":"ᜋᜒ",
+"ye":"ᜌᜒ",
+"le":"ᜎᜒ",
+"we":"ᜏᜒ",
+"se":"ᜐᜒ",
+"ze":"ᜐᜒ",
+"he":"ᜑᜒ",
+"Ke":"ᜃᜒ",
+"Ge":"ᜄᜒ",
+"Nge":"ᜅᜒ",
+"Te":"ᜆᜒ",
+"De":"ᜇᜒ",
+"Re":"ᜇᜒ",
+"Ne":"ᜈᜒ",
+"Pe":"ᜉᜒ",
+"Fe":"ᜉᜒ",
+"Be":"ᜊᜒ",
+"Ve":"ᜊᜒ",
+"Me":"ᜋᜒ",
+"Ye":"ᜌᜒ",
+"Le":"ᜎᜒ",
+"We":"ᜏᜒ",
+"Se":"ᜐᜒ",
+"Ze":"ᜐᜒ",
+"He":"ᜑᜒ",
+"KE":"ᜃᜒ",
+"GE":"ᜄᜒ",
+"NGE":"ᜅᜒ",
+"TE":"ᜆᜒ",
+"DE":"ᜇᜒ",
+"RE":"ᜇᜒ",
+"NE":"ᜈᜒ",
+"PE":"ᜉᜒ",
+"FE":"ᜉᜒ",
+"BE":"ᜊᜒ",
+"VE":"ᜊᜒ",
+"ME":"ᜋᜒ",
+"YE":"ᜌᜒ",
+"LE":"ᜎᜒ",
+"WE":"ᜏᜒ",
+"SE":"ᜐᜒ",
+"ZE":"ᜐᜒ",
+"HE":"ᜑᜒ",
+
+"ki":"ᜃᜒ",
+"gi":"ᜄᜒ",
+"ngi":"ᜅᜒ",
+"ti":"ᜆᜒ",
+"di":"ᜇᜒ",
+"ri":"ᜇᜒ",
+"ni":"ᜈᜒ",
+"pi":"ᜉᜒ",
+"fi":"ᜉᜒ",
+"bi":"ᜊᜒ",
+"vi":"ᜊᜒ",
+"mi":"ᜋᜒ",
+"yi":"ᜌᜒ",
+"li":"ᜎᜒ",
+"wi":"ᜏᜒ",
+"si":"ᜐᜒ",
+"zi":"ᜐᜒ",
+"hi":"ᜑᜒ",
+"Ki":"ᜃᜒ",
+"Gi":"ᜄᜒ",
+"Ngi":"ᜅᜒ",
+"Ti":"ᜆᜒ",
+"Di":"ᜇᜒ",
+"Ri":"ᜇᜒ",
+"Ni":"ᜈᜒ",
+"Pi":"ᜉᜒ",
+"Fi":"ᜉᜒ",
+"Bi":"ᜊᜒ",
+"Vi":"ᜊᜒ",
+"Mi":"ᜋᜒ",
+"Yi":"ᜌᜒ",
+"Li":"ᜎᜒ",
+"Wi":"ᜏᜒ",
+"Si":"ᜐᜒ",
+"Zi":"ᜐᜒ",
+"Hi":"ᜑᜒ",
+"KI":"ᜃᜒ",
+"GI":"ᜄᜒ",
+"NGI":"ᜅᜒ",
+"TI":"ᜆᜒ",
+"DI":"ᜇᜒ",
+"RI":"ᜇᜒ",
+"NI":"ᜈᜒ",
+"PI":"ᜉᜒ",
+"FI":"ᜉᜒ",
+"BI":"ᜊᜒ",
+"VI":"ᜊᜒ",
+"MI":"ᜋᜒ",
+"YI":"ᜌᜒ",
+"LI":"ᜎᜒ",
+"WI":"ᜏᜒ",
+"SI":"ᜐᜒ",
+"ZI":"ᜐᜒ",
+"HI":"ᜑᜒ",
+
+"mga ":"ᜋᜅ ",
+"Mga ":"ᜋᜅ ",
+"MGA ":"ᜋᜅ ",
+
+" ng ":" ᜈᜅ᜔ ",
+" Ng ":" ᜈᜅ᜔ ",
+" NG ":" ᜈᜅ᜔ ",
+
+",":"᜵",
+".":"᜶",
+
+        };
+
+ var maxLength = Object.keys(conversion)
+    .reduce((a, b) => a.length > b.length ? a : b) // get the longest word
+    .length; // and it's length
+  
+  function convert (text) {
+    var converted = "";
+    var cur = 0;
+    while (cur < text.length) {
+      var testedPhoneme;
+      var symbol = undefined;
+      for (var length = maxLength; length > 0; length --) {
+        testedPhoneme = text.substr(cur, length);
+        if (conversion[testedPhoneme]) {
+          symbol = conversion[testedPhoneme];
+          break; // stop the loop
+        }
+      }
+      if (symbol) {
+        converted += symbol;
+        cur += testedPhoneme.length;
+      }
+      else {
+        converted += text[cur]
+        cur++;
+      }
+    }
+    return converted
+  }
+
+  function onInputTextChange(txt) {
+    var outputTextareaElem = document.getElementById("output_textarea");
+    var div = document.createElement("div");
+    var outputHtmlEntities = convert(txt);
+    div.innerHTML = outputHtmlEntities;
+    outputTextareaElem.value = div.innerText;
+  }
+
+
+        function select() {
+          const input = document.getElementById('input_textarea');
+          input.focus();
+          input.select();
+        }   
+        function copytext() {
+          var copyText = document.getElementById("output_textarea");
+          copyText.select();
+          copyText.setSelectionRange(0, 99999)
+          document.execCommand("copy");
+        }
+
+    </script>
+    
+<style>
+@import url(https://victorlee.github.io/fonts/stylesheet.css);
+
+
+html {
+font-family:arial, openbaybayin
+}
+table {
+  border-collapse: collapse;
+  width: 90%;
+}
+td, th {
+  border: 1px solid #AAA;
+  text-align: center;
+  padding: 1px;
+}
+textarea {
+	font-size: 16pt;
+	font-family: Arial, OpenBaybayin;
+    width: 96%;
+} 
+.note {
+  border: 1px solid #DDD;
+  width: 30%;
+  text-align: left;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+</style>
+
+
+</head>
+<body>  
+
+<body>  
+
+<center><h1 class="text-center">Baybayin typer</h1></center><br>
+ 
+<center>
+<table>
+<thead>
+<tr>
+<th>	
+<button onclick="select('input_textarea')">Select all</button>
+<button onclick="document.getElementById('input_textarea').value = ''">Clear</button>
+</th>
+<th>
+<button onclick="copytext()">Copy text</button>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<textarea
+id="input_textarea"
+autofocus=""
+placeholder="Input text here"
+rows="10"
+oninput="onInputTextChange(this.value)"></textarea>    
+</td>
+<td>
+<textarea rows="10" placeholder="output" id="output_textarea"></textarea>    
+</td>
+
+</tr>
+</tbody>
+</table>
+<br>
+<p>comma → ᜵<br>period → ᜶<br>[space]ng[space] → [space]ᜈᜅ᜔[space]<br>mga[space] → ᜋᜅ[space]</p>
+</center>
+
+</body>
+</html>
